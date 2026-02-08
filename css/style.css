@@ -408,11 +408,25 @@ body {
 }
 
 
-.lifestyle-images img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  max-width: none;      /* 🔑 permite crecer */
+@media (max-width: 768px) {
+
+  .lifestyle-images {
+    display: flex !important;
+    overflow-x: auto !important;
+    gap: 10px;
+  }
+
+  .lifestyle-images img {
+    width: 100% !important;
+    max-width: 320px;
+    height: auto;
+    object-fit: cover;
+    flex: 0 0 auto;
+    border-radius: 12px;
+  }
+
 }
+
 
 
 
